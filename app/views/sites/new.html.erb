@@ -1,2 +1,7 @@
 <h1>Sites#new</h1>
 <p>Find me in app/views/sites/new.html.erb</p>
+
+<%= form_for(@site) do |f| %>
+    <%= f.text_field :url, placeholder: "Enter A Website", autofocus: true %>
+    <%= f.submit "Submit" %>
+<% end %>

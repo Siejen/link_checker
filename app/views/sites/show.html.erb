@@ -2,10 +2,10 @@
 <p>Find me in app/views/sites/show.html.erb</p>
 
 <h3><%= @site.url %></h3>
-<br/>
-<br/>
 
-<%= @site.links.each do | link | %>
-	<%= link.url %><br/>
-	<%= link.http_response %></br></br>
+<% @site.links.each do |link| %>
+	<ul type="none">
+		<li>URL: <%= link.url %></li>
+		<li>Response Code: <%= link.http_response %></li>
+	</ul>
 <% end %>

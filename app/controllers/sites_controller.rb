@@ -25,5 +25,7 @@ class SitesController < ApplicationController
 	end
 
   def show
+  	# id = params[:id]
+  	@site = Site.find_by_id(params[:id])
   end
 end
